@@ -1,0 +1,33 @@
+.search{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .search-items{
+        height: 40px;
+        border-radius: 12px;
+        border: 2.5px solid #49557e;
+    }
+    input{
+        width: 250px;
+        padding: 10px;
+        font-size: 15px;
+        outline: none;
+    }
+
+    button{
+        width: 100px;
+        font-size: 1.4em;
+        font-weight: 600;
+        color: #49557e;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    button:hover{
+        background-color: rgb(197, 202, 206);
+        color: #495560;
+        font-size: 1.2em;
+    }
+}
