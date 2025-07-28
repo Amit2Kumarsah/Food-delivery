@@ -1,5 +1,5 @@
 import React, { use, useContext } from "react";
-import "./cart.css";
+import "./Cart.css";
 import { StoreContext } from "../../Context/StoreContext";
 import { useNavigate } from "react-router-dom";
 

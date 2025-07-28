@@ -9,7 +9,7 @@ const StoreContextProvider = (props) => {
   const [food_list, setFood_list] = useState([]);
   const [token, setToken] = useState("");
   const [searchFoods, setSearchFoods] = useState(false);
-  const url = "http://localhost:4000";
+  const url = "https://food-delivery-backend-npit.onrender.com";
 
 
   useEffect( () =>{

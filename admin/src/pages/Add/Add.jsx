@@ -31,7 +31,7 @@ function Add() {
     formData.append("image",image);
 
     try{
-      const response = await axios.post('http://localhost:4000/api/food/add',formData);
+      const response = await axios.post('https://food-delivery-backend-npit.onrender.com/api/food/add',formData);
 
       setData({
         name: "",

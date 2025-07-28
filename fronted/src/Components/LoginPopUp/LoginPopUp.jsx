@@ -64,9 +64,8 @@ function LoginPopUp({setShowLogin}) {
             }else{
                 setMessage(response.data.message);
             }
-            console.log(response.data);
         }catch(error){
-            alert(error.message);
+            console.error("Error during login:", error);
         }
     }
 

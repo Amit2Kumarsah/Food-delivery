@@ -9,7 +9,7 @@ function List() {
 
   const fetchList = async() =>{
       try{
-        const response = await axios.get('http://localhost:4000/api/food/list');
+        const response = await axios.get('https://food-delivery-backend-npit.onrender.com/api/food/list');
         setList(response.data.data);
       }catch(err){
         toast.error("error")
@@ -19,7 +19,7 @@ function List() {
   const removeFromList = async (e,foodId) =>{
     e.preventDefault();
     try{
-      const response = await axios.post('http://localhost:4000/api/food/remove',{id:foodId});
+      const response = await axios.post('https://food-delivery-backend-npit.onrender.com/api/food/remove',{id:foodId});
       toast.success("Item removed sucessfully");
       await fetchList();
 

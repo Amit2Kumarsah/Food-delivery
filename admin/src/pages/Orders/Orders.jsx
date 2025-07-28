@@ -13,7 +13,7 @@ function Orders() {
   const fetchAllOrders = async () => {
 
     try{
-      const response = await axios.get("http://localhost:4000/api/order/list");
+      const response = await axios.get("https://food-delivery-backend-npit.onrender.com/api/order/list");
       setOrders(response.data.data);
     }catch(err){
       toast.error("Error");
@@ -22,7 +22,7 @@ function Orders() {
 
   const statusHandler = async (event, orderId) =>{
     try{
-      const response = await axios.post("http://localhost:4000/api/order/status", {
+      const response = await axios.post("https://food-delivery-backend-npit.onrender.com/api/order/status", {
         orderId,
         status: event.target.value
       })
