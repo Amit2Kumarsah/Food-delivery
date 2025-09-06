@@ -31,7 +31,7 @@ const port =process.env.PORT ||4000;
 app.use('/images', express.static('uploads')); // Serve static files from 'uploads' directory
 app.use('/api/food', foodRouter);
 app.use('/api/user', userRouter);
-app.use("/api/cart/", cartRouter);
+app.use("/api/cart", cartRouter);
 app.use("/api/order", orderRouter);
 app.use("/api/forget", resetRouter);
 
